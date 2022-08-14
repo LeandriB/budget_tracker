@@ -49,7 +49,7 @@ Before you start, clone the [starter code](https://github.com/coding-boot-camp/s
 ## User Story
 
 ```md
-AS AN avid traveller
+AS AN avid traveler
 I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
 SO THAT my account balance is accurate when I am traveling 
 ```
@@ -122,13 +122,7 @@ This `manifest.json` file for this project will contain the following properties
 Finally, the budget tracker has a server and uses MongoDB as its database, so you’ll need to deploy this application to Heroku using MongoDB Atlas. To review this process, look at Module 18: NoSQL, Lesson 5: Add Mongoose Validation, specifically 18.5.5: Deploy to Heroku.
 
 
-## Review
+## Resources
 
-You are required to submit BOTH of the following for review:
+* The code for this project was provided by my instructor, [Gary Almes](https://github.com/garytalmes/pwa_adventuretime)
 
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
