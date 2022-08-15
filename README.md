@@ -1,50 +1,16 @@
-# 19 Progressive Web Applications (PWA): Budget Tracker
+# Budget Tracker
 
-## Important!!
+## Contents
 
-You are being given a Develop repo that is significantly different from the one referenced in the Challenge assignment. A fair amount of the final solution code is already included here, along with TODO statements in various files for the work you need to do.
-
-All of the server-related code is already provided for you and has never been a part of the work for this Challenge, so you don't need to touch it. But you should take a look at it to be familiar with what's going on. I haven't commented any of that code.
-
-All of the work you'll be doing is in the *public* directory.
-
-The final, completed functionality will exactly match that expected in the assignment. You will be working in the following files, and you should tackle them in the order below:
-
-*public/manifest.json*
-For more information about the manifest file [look here](/info/manifest/README.md).
-
-*public/service_worker.js*
-There are mostly info statements in this file, but there are one or two small TODOs. For more information about the service-worker file [look here](/info/service_worker/README.md).
-
-*public/index.html*
-
-*public/js/idb.js*
-For more information on IndexedDB [look here](/info/indexed_db/README.md).
-
-
-Before you submit your assigment, please do the following:
-
-- In your submission notes or in your README file for the challenge, indicate that some code was provided by your instructor.
-- Delete all the commented INFO and TODO items once you're done with them. You may want to keep an extra copy of my starter repo locally as a reference, or you can just use the one on Github.
-- Make sure to test the app both locally and on Heroku, and both with and without an Internet connection. If possible, test on both a desktop browser and a mobile device.
-
-Do NOT include this README file as part of your Challenge submission.
-
-Ok, now on with the assignment:
-
----
-<br/>
-
-Giving users a fast and easy way to track their money is important, but allowing them to access that information at any time is even more important. Having offline functionality is paramount to the success of an application that handles users’ financial information.
-
-Your challenge this week is to add functionality to an existing budget tracker application to allow for offline access and functionality. The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should update the total when brought back online. Finally, you’ll deploy the application to Heroku.
-
-Before you start, clone the [starter code](https://github.com/coding-boot-camp/symmetrical-bassoon).
-
-> **On the Job:** When web developers are working on a feature request or trying to kill a bug, they rarely have all the information they need to solve the task in front of them. Being a successful developer requires you to combine knowledge that you’ve picked up from different applications you’ve worked on in the past to formulate a solution.
-> 
-> This Challenge will ask you to combine several tasks that you’ve learned over this module and the previous one to add offline functionality to an existing application. We’ve outlined how you can achieve this in the Getting Started section below.
-
+  - [User Story](#user_story)
+  - [Acceptance Criteria](#acceptance_criteria)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [License](#license)
+  - [Attributions](#attributions)
+  - [Questions](#questions)
 
 ## User Story
 
@@ -64,65 +30,49 @@ WHEN the user reestablishes an internet connection
 THEN the deposits or expenses added while they were offline are added to their transaction history and their totals are updated
 ```
 
-## Mock-Up
+## Installation
 
-The following image shows the web application's appearance and functionality:
+Run the following command in your terminal in order to install all the packages:
 
-![Challenge Demo](./Assets/19-pwa-homework-demo-01.png)
+`npm install`
 
+Start the node application by running: 
 
-## Getting Started
+`npm start`
 
-Revisit the following lessons to complete this challenge:
+## Usage
 
-### Offline Functionality
+![Preview](./images/preview.png)
 
-You’ll need to use IndexedDB to add offline functionality. Review Module 18: NoSQL, Lesson 4: Add Offline Persistence with IndexedDB as a refresher on how to add this to your application.
+Link to [deployed application](https://youtu.be/TfOZdvb7oGc)
 
-You’ll also need to add a service worker to your application. Review Module 19: Progressive Web Applications (PWA), Lesson 4: Using Service Workers as a refresher on how to add this to your application.
+## Contributing
 
-> **Rewind:** The Food Festival application that you created in this module's lessons did not include an Express.js server, so you used the `webpack-dev-server` npm module to test the service worker with an HTTPS-enabled server.
-> 
-> For this Challenge, however, you aren't using webpack, but you do have an Express.js server provided to you in the starter code. Remember that Chrome DevTools makes it possible to test service workers on localhost in development. Simply click on the Application tab in the tools, then select Service Workers from the left hand navigation.
+In order to contribute, create a pull request and follow the steps listed below:
 
-> **Important:** You should add both of the files to handle this functionality to the `public/js/` directory of your application.
+- Fork the repo
+- Create a feature branch (git checkout -b NAME-HERE)
+- Commit your new feature (git commit -m 'Add some feature')
+- Push your branch (git push)
+- Create a new Pull Request
 
-Once you’ve updated the existing budget tracker, it should provide the following functionality:
+Following a code review, your feature will be merged.
 
-* The ability to enter deposits offline.
+## Tests
 
-* The ability to enter expenses offline.
+No testing protocols were implemented in this application
 
-* Offline entries should be added to the tracker when the application is brought back online.
+## License
 
-### Web Manifest
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Because this will be a mobile-first application, you’ll also need to add a web manifest to your application with the app’s metadata to let users’ devices know what they’re installing and how the app should look on the home screen.
+This application is licensed under the MIT License.
 
-This `manifest.json` file for this project will contain the following properties:
-
-* `name`
-
-* `short_name`
-
-* `icons`
-
-* `theme_color`
-
-* `background_color`
-
-* `start_url`
-
-* `display`
-
-> **Important:** In the module project, you used webpack to create the `manifest.json` file. For this application, you’ll need to create it manually and add it to the `public/` directory of your application. You can also review **Module 19: Progressive Web Applications (PWA), Lesson 5: PWA** as a refresher on web manifests.
-
-### Deployment to Heroku Using MongoDB Atlas
-
-Finally, the budget tracker has a server and uses MongoDB as its database, so you’ll need to deploy this application to Heroku using MongoDB Atlas. To review this process, look at Module 18: NoSQL, Lesson 5: Add Mongoose Validation, specifically 18.5.5: Deploy to Heroku.
-
-
-## Resources
+## Attributions
 
 * The code for this project was provided by my instructor, [Gary Almes](https://github.com/garytalmes/pwa_adventuretime)
+* Deployed through [Heroku](https://www.heroku.com/) using [Mongo Atlas](https://www.mongodb.com/atlas/database)
 
+## Questions
+
+If you have any questions, please contact me at my [email](mailto:leandrikuyk@gmail.com?subject=%20Budget%20Tracker). You can find more of my work on my GitHub at [LeandriB](https://github.com/LeandriB). 
