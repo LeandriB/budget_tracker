@@ -44,7 +44,7 @@ Start the node application by running:
 
 ![Preview](./images/preview.png)
 
-Link to [deployed application](https://youtu.be/TfOZdvb7oGc)
+Link to [deployed application](https://stark-journey-24322.herokuapp.com/)
 
 ## Contributing
 
