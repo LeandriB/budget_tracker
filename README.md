@@ -44,7 +44,7 @@ Start the node application by running:
 
 ![Preview](./images/preview.png)
 
-Link to [deployed application](https://stark-journey-24322.herokuapp.com/)
+Link to [deployed application](https://rocky-bayou-14082.herokuapp.com/)
 
 ## Contributing
 
